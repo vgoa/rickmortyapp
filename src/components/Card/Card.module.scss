@@ -1,0 +1,85 @@
+$transition-out : all .3s ease-in-out;
+$fondo : linear-gradient(0deg, rgba(2,175,197,1) 0%, rgba(76,181,195,1) 40%, rgba(135,209,219,1) 95%);
+.Card{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    transition: $transition-out;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    background:$fondo;
+    animation: card-up 500ms ease-out;
+    animation-fill-mode:forwards;
+    animation-delay: 1000ms;
+        @for $i from 1 through 25{
+        &:nth-child(#{$i}){
+            animation-delay: $i * 50ms;
+        }
+    }
+    @media(min-width:550px){
+        width:100%;
+    }
+    &:hover{
+        border-radius: 25px;
+        box-shadow: 0 0 1px rgba(0,0,0,0.5);
+        img{
+            border-radius: 150px;
+        }
+    }
+    img{
+        width:100%;
+        border-radius: 50px;
+        max-width: 150px;
+        transition: $transition-out;
+    }
+    h1{
+        color: #f0e14a;
+        margin-bottom: 10px;
+    }
+}
+.locationContent{
+    p{
+        &:nth-child(1){
+            margin: 0;
+        }
+        &:nth-child(2){
+            margin-top: 0;
+        }
+    }
+}
+.boton{
+    appearance: none;
+    background: rgba(62,180,137,1);
+    color: white;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    border: 1px solid white;
+    cursor: pointer;
+    margin: 10px 0;
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 10px;
+    }
+}
+@keyframes card-up{
+    0%{
+      opacity: 0;
+      top:100px
+    }
+    100%{
+      opacity: 1;
+      top:0;
+    }
+  }

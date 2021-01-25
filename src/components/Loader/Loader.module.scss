@@ -1,0 +1,22 @@
+$fondo : linear-gradient(0deg, rgba(2,175,197,1) 0%, rgba(76,181,195,1) 40%, rgba(135,209,219,1) 95%);
+.portalContainer{
+    background: $fondo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    img{
+        animation: rotating 2s linear infinite;
+        width:100%;
+        max-width:100px;
+    }
+}
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,16 @@
+$fondo :  linear-gradient(0deg, rgba(152,255,152,1) 25%, rgba(65,235,119,1) 35%, rgba(214,255,216,1) 53%, rgba(62,180,137,1) 91%);
+
+.HomeContainer{
+    min-height: 100vh;
+    background: $fondo;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 2rem;
+    padding: 20px;
+    @media(min-width:600px){
+        max-width: 80%;
+        margin: auto;
+    }
+}

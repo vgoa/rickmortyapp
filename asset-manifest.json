@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rickmortyapp/static/css/main.a887491a.chunk.css",
-    "main.js": "/rickmortyapp/static/js/main.562c8e20.chunk.js",
-    "main.js.map": "/rickmortyapp/static/js/main.562c8e20.chunk.js.map",
+    "main.js": "/rickmortyapp/static/js/main.8e776067.chunk.js",
+    "main.js.map": "/rickmortyapp/static/js/main.8e776067.chunk.js.map",
     "runtime-main.js": "/rickmortyapp/static/js/runtime-main.6d42bd70.js",
     "runtime-main.js.map": "/rickmortyapp/static/js/runtime-main.6d42bd70.js.map",
     "static/js/2.6f870183.chunk.js": "/rickmortyapp/static/js/2.6f870183.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6d42bd70.js",
     "static/js/2.6f870183.chunk.js",
     "static/css/main.a887491a.chunk.css",
-    "static/js/main.562c8e20.chunk.js"
+    "static/js/main.8e776067.chunk.js"
   ]
 }
